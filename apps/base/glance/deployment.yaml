@@ -22,11 +22,11 @@ spec:
           - containerPort: 9090
 
         volumeMounts:
-            - name: glance-data
+            - name: config
               mountPath: ./config:/app/config
 
       volumes:
-        - name: glance-data
+        - name: config
           persistentVolumeClaim:
             claimName: glance-data-pvc
 
