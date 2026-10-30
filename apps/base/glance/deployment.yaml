@@ -22,7 +22,7 @@ spec:
           - containerPort: 9090
 
         volumeMounts:
-            - name: galnce-data
+            - name: glance-data
               mountPath: ./config:/app/config
 
         volumes:
