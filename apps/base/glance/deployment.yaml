@@ -25,7 +25,7 @@ spec:
             - name: glance-data
               mountPath: ./config:/app/config
 
-        volumes:
+      volumes:
         - name: glance-data
           persistentVolumeClaim:
             claimName: glance-data-pvc
