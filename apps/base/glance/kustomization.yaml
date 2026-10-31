@@ -3,6 +3,13 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - deployment.yaml
-  - configmap.yaml
   - storage.yaml
   - service.yaml
+
+configMapGenerator:
+  - name: glance
+    namespace: glance
+    files:
+      - glance.yml
+generatorOptions:
+  disableNameSuffixHash: true
