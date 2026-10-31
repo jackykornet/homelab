@@ -4,7 +4,7 @@ metadata:
   name: glance
 spec:
   ports:
-    - port: 9091
+    - port: 9092
   selector:
     app: glance
   type: ClusterIP
