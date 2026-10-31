@@ -23,7 +23,7 @@ spec:
 
         volumeMounts:
             - name: config
-              mountPath: ./config:/app/config
+              mountPath: /app/config/glance.yml
 
       volumes:
         - name: config
@@ -37,4 +37,3 @@ spec:
 	          items:
 	          - key: glance.yaml
 	            path: glance.yaml
-
