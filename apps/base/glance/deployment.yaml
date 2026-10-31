@@ -20,20 +20,16 @@ spec:
         name: glance
         ports:
           - containerPort: 9090
-
         volumeMounts:
             - name: config
               mountPath: /app/config/glance.yml
-
       volumes:
         - name: config
           persistentVolumeClaim:
             claimName: glance-data-pvc
-
-        # Create a config.yaml file from the ConfigMap below.
 	      - name: config
 	        configMap:
 	          name: glance
 	          items:
-	          - key: glance.yaml
-	            path: glance.yaml
+	          - key: glance.yml
+	            path: glance.yml
