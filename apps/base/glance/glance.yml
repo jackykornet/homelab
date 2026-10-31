@@ -23,9 +23,9 @@ pages:
             cache: 1m
             title: Services
             sites:
-              - title: Jellyfin
-                url: https://yourdomain.com/
-                icon: si:jellyfin
+              - title: Zabbix
+                url: https://sombra.tenrok.online/zabbix
+                icon: si:zabbix
               - title: Gitea
                 url: https://yourdomain.com/
                 icon: si:gitea
