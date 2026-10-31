@@ -6,6 +6,16 @@ pages:
     columns:
       - size: full
         widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Europe/Amsterdam
+                label: Amsterdam
+              - timezone: America/New_York
+                label: New York
+              - timezone: America/Asuncion
+                label: Paraguay
+
           - type: search
             autofocus: true
 
@@ -36,17 +46,17 @@ pages:
             groups:
               - title: General
                 links:
-                  - title: Gmail
-                    url: https://mail.google.com/mail/u/0/
-                  - title: Amazon
-                    url: https://www.amazon.com/
+                  - title: Linkding
+                    url: https://linkding.tenrokhomelab.org/
+                  - title: Zabbix Monitoring
+                    url: https://sombra.tenrok.online/zabbix/
                   - title: Github
                     url: https://github.com/
 
               - title: Entertainment
                 links:
-                  - title: YouTube
-                    url: https://www.youtube.com/
+                  - title: Tweakers.net
+                    url: https://www.tweakers.com/
                   - title: Prime Video
                     url: https://www.primevideo.com/
                   - title: Disney+
@@ -60,3 +70,14 @@ pages:
                     url: https://twitter.com/
                   - title: Instagram
                     url: https://www.instagram.com/
+
+         - type: rss
+            title: News
+            style: horizontal-cards
+            feeds:
+            - url: https://feeds.bloomberg.com/markets/news.rss
+              title: Bloomberg
+            - url: https://moxie.foxbusiness.com/google-publisher/markets.xml
+              title: Fox Business
+            - url: https://moxie.foxbusiness.com/google-publisher/technology.xml
+              title: Fox Business
