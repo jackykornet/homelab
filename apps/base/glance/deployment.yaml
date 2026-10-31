@@ -24,10 +24,10 @@ spec:
         - name: config
           mountPath: /app/config/glance.yml
           subpath: glance.yml
-        volumes:
-        - name: config
-          configMap:
-            name: glance
-            items:
-              - key: glance.yml
-                path: glance.yml
+      volumes:
+      - name: config
+        configMap:
+          name: glance
+          items:
+            - key: glance.yml
+              path: glance.yml
