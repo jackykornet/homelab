@@ -3,3 +3,6 @@ kind: Kustomization
 namespace: glance
 resources:
   - ../../base/glance
+  - cloudflare.yaml
+  - cloudflare-secret.yaml
+
