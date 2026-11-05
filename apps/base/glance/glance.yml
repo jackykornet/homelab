@@ -45,10 +45,10 @@ pages:
                   - title: Github
                     url: https://github.com/
 
-              - title: Entertainment
+              - title: Jobs
                 links:
-                  - title: Tweakers.net
-                    url: https://www.tweakers.com/
+                  - title: Arenella-ict
+                    url: https://www.arenella-ict.com/listing
                   - title: Prime Video
                     url: https://www.primevideo.com/
                   - title: Disney+
@@ -65,7 +65,7 @@ pages:
 
           - type: rss
             title: News
-            style: horizontal-cards
+            style: vertical-list
             feeds:
               - url: https://tweakers.net/feeds/nieuws.xml
                 title: Tweakers
