@@ -44,6 +44,8 @@ pages:
                     url: https://sombra.tenrok.online/zabbix/
                   - title: Github
                     url: https://github.com/
+                  - title: Unifi Controller
+                    url: https://unifi.ui.com/
 
               - title: Jobs
                 links:
@@ -64,12 +66,17 @@ pages:
                     url: https://nextlevelfreelancer.circle.so/c/cafe
 
           - type: rss
+            title: Security Advisories
+            style: vertical-list
+            feeds:
+              - url: https://advisories.ncsc.nl/rss/advisories
+                title: NCSC Advisories
+
+          - type: rss
             title: News
             style: vertical-list
             feeds:
               - url: https://tweakers.net/feeds/nieuws.xml
                 title: Tweakers
-              - url: https://advisories.ncsc.nl/rss/advisories
-                title: NCSC Advisories
               - url: https://feeds.ncsc.nl/nieuws.rss
                 title: NCSC News
