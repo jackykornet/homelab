@@ -32,8 +32,8 @@ spec:
               mountPath: /app/certificates
       volumes:
         - name: data
-          persistentVolumeClaim: 
+          persistentVolumeClaim:
             claimName: certmate-data
         - name: certs
-          persistentVolumeClaim: 
+          persistentVolumeClaim:
             claimName: certmate-certs
