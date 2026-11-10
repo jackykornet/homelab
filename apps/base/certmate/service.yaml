@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
-metadata: 
+metadata:
   name: certmate
 spec:
   type: ClusterIP
-  selector: 
+  selector:
     app: certmate
-  ports: 
-    port: 9093
-    targetPort: 8000
+  ports:
+    - name: http
+      port: 9093
+      targetPort: 8080
