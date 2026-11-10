@@ -17,7 +17,7 @@ spec:
       containers:
         - name: certmate
           image: fabriziosalmi/certmate:latest
-          ports: 
+          ports:
             containerPort: 8000
           env:
             - name: API_BEARER_TOKEN
