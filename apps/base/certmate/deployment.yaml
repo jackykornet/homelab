@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: certmate
-          image: fabriziosalmi/certmate:latest
+          image: fabriziosalmi/certmate:v2.55.2
           ports:
-            containerPort: 8000
+            - conntainerPort: 8000
           env:
             - name: API_BEARER_TOKEN
               valueFrom:
@@ -35,3 +35,5 @@ spec:
           persistentVolumeClaim: 
             claimName: certmate-data
         - name: certs
+          persistentVolumeClaim: 
+            claimName: certmate-certs
