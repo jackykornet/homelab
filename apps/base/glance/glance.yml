@@ -25,22 +25,14 @@ pages:
             sites:
               - title: Zabbix
                 url: https://sombra.tenrok.online/zabbix
-                icon: si:zabbix
-              - title: Gitea
-                url: https://yourdomain.com/
-                icon: si:gitea
-              - title: qBittorrent # only for Linux ISOs, of course
-                url: https://yourdomain.com/
-                icon: si:qbittorrent
-              - title: Immich
-                url: https://yourdomain.com/
-                icon: si:immich
-              - title: AdGuard Home
-                url: https://yourdomain.com/
-                icon: si:adguard
-              - title: Vaultwarden
-                url: https://yourdomain.com/
-                icon: si:vaultwarden
+                icon: sh:zabbix
+              - title: HestiaCP
+                url: https://vps-e234faf0.vps.ovh.net/
+                # icon: si:gitea
+              - title: Blog Website
+                url: https://blog.tenrok.nl
+              - title: Homepage
+                url: https://tenrok.nl
 
           - type: bookmarks
             groups:
@@ -52,32 +44,39 @@ pages:
                     url: https://sombra.tenrok.online/zabbix/
                   - title: Github
                     url: https://github.com/
+                  - title: Unifi Controller
+                    url: https://unifi.ui.com/
 
-              - title: Entertainment
+              - title: Jobs
                 links:
-                  - title: Tweakers.net
-                    url: https://www.tweakers.com/
+                  - title: Arenella-ict
+                    url: https://www.arenella-ict.com/listing
                   - title: Prime Video
                     url: https://www.primevideo.com/
                   - title: Disney+
                     url: https://www.disneyplus.com/
 
-              - title: Social
+              - title: Learning
                 links:
-                  - title: Reddit
-                    url: https://www.reddit.com/
-                  - title: Twitter
-                    url: https://twitter.com/
-                  - title: Instagram
-                    url: https://www.instagram.com/
+                  - title: Kodekloud
+                    url: https://learn.kodekloud.com/learn/dashboard
+                  - title: Kubecraft
+                    url: https://www.skool.com/kubecraft
+                  - title: Next Level Freelancer
+                    url: https://nextlevelfreelancer.circle.so/c/cafe
+
+          - type: rss
+            title: Security Advisories
+            style: vertical-list
+            feeds:
+              - url: https://advisories.ncsc.nl/rss/advisories
+                title: NCSC Advisories
 
           - type: rss
             title: News
-            style: horizontal-cards
+            style: vertical-list
             feeds:
-              - url: https://feeds.bloomberg.com/markets/news.rss
-                title: Bloomberg
-              - url: https://moxie.foxbusiness.com/google-publisher/markets.xml
-                title: Fox Business
-              - url: https://moxie.foxbusiness.com/google-publisher/technology.xml
-                title: Fox Business
+              - url: https://tweakers.net/feeds/nieuws.xml
+                title: Tweakers
+              - url: https://feeds.ncsc.nl/nieuws.rss
+                title: NCSC News
