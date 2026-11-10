@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: certmate
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: certmate
+  template:
+    metadata:
+      labels: 
+        app: certmate
+    spec:
+      containers:
+        - name: certmate
+          image: fabriziosalmi/certmate:latest
+          ports: 
+            containerPort: 8000
+          env:
+            - name: API_BEARER_TOKEN
+              valueFrom:
+                secretKeyRef: 
+                  name: certmate-secrets
+                  key: api-token
+          volumeMounts:
+            - name: data
+              mountPath: /app/data
+            - name: certs
+              mountPath: /app/certificates
+      volumes:
+        - name: data
+          persistentVolumeClaim: 
+            claimName: certmate-data
+        - name: certs
