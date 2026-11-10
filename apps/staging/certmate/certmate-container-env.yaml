@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+    api-token: ENC[AES256_GCM,data:jxzA3I3rxDnIIKiyL7ASqRuG8+lOkwLnSqMIQak5OryYwaHXQtKTQ9JCapo=,iv:htBTu8ru7uhVmboYhSpQiRby0MOK+I0yYzIazuc9YIY=,tag:hIK7vXLWIMaLb+T8WBEF0w==,type:str]
+kind: Secret
+metadata:
+    name: certmate-secrets
+    namespace: certmate
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBoTnJRZEtjZUwvMnNYMmZT
+            UEMvTUlISDgrcDhIOUVWSzhidkJzRytMTWdjCnQ3TThoVXM4N0o2Rk5LK0dLdmtE
+            VGFtV0FwV0tYN2QyNi9RSDF5WEZNQXcKLS0tIG1YeFViVmJnL1RwTjRUajF5SjQ1
+            QUcvSG1aNlVJeGtRaWxtVlF6UTRqRTQKmVkX8ahj55++NwoHabpgdMnn14EToGEN
+            xbVSRLxk353D1A0nTf5kIeiX5YprV0iPQMNU1rgmEhuz/noCvhwBHw==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age137de97ph5npwgyx9254za2kep6l04wna66zr8pt5z68ss0sy5asqm9um7p
+    encrypted_regex: ^(data|stringData)$
+    lastmodified: "2026-11-10T08:25:33Z"
+    mac: ENC[AES256_GCM,data:k6rU0kKJT3J5wpvudlWC7+LBXH8wEEWBVs361fa0EY0dIUJi7ZPAi8qyO0Gfnv/BWx7yeUCmcB0Ea64OUATu0uqYXL2TRD1jSuxkxxoU8Qcgt+x1mt9SYtUincdRJ6xFmvSnkA+iUNDHXXVLVTq+peZHAGnMxVhMBH6se2M81po=,iv:7dPUMNkkwTjV507z7zx0wZ58sRy5YEW3stitekJAR9I=,tag:BXOm/zqUN/Uo9xJaAkUU/g==,type:str]
+    version: 3.13.3
