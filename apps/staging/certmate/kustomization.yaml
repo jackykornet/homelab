@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: certmate
 resources:
   - ../../base/certmate
-#  - cloudflare.yaml
-#  - cloudflare-secret.yaml
+  - cloudflare.yaml
+  - cloudflare-secret.yaml
   - certmate-container-env.yaml
 
